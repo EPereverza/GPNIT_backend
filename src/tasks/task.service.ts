@@ -4,8 +4,14 @@ import { TaskDto } from './dto/task.dto'
 @Injectable()
 export class TaskService {
   private tasks: TaskDto[] = [
-    { id: 1, title: 'Сделать логин-форму', description: 'Верстка логина на React' },
-    { id: 2, title: 'API задач', description: 'Создать /tasks в NestJS' },
+    { id: 1, 
+      title: 'функция сложения на Python', 
+      description: 'Написать функцию на языке Python, которая складывает два числа',
+      solution: 'def add(a, b):\n    return a + b'},
+    { id: 2, 
+      title: 'функция вычитания на Python ', 
+      description: 'Написать функцию на язке Python, которая вычитает два числа',
+      solution: 'def add(a, b):\n    return a + b'},
   ]
 
   findAll(): TaskDto[] {
